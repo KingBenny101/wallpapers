@@ -2,7 +2,7 @@
 
 Collection of wallpapers I use.
 
-## wcapp
+## Check out `wcapp`
 
 - [**cli**](https://github.com/KingBenny101/wcapp) - An app designed to easily manage this wallpaper collection. It provides a simple cli to browse, organize, and set wallpapers from this repository.
 
@@ -35,16 +35,34 @@ git clone https://github.com/Incalculas/wallpapers.git
 
 ### Prerequisites
 
+**Python Environment Setup**
+
+The script requires Python 3.9. It's recommended to use a virtual environment:
+
+```bash
+# Using conda (recommended)
+conda create -n wallpapers python=3.9
+conda activate wallpapers
+
+# Or using venv
+python3.9 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+**Ollama Setup**
+
 - Install and run [Ollama](https://ollama.com)
 - Pull a compatible vision model (e.g. `qwen3-vl:4b`):
+
 ```bash
 ollama pull qwen3-vl:4b
 ```
 
 - Install required Python packages:
+
 ```bash
 pip install ollama
-``` 
+```
 
 ### Basic classification
 
